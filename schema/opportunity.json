@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Opportunity",
+  "type": "object",
+  "required": ["id", "title", "source", "prize", "deadline", "url", "format", "status", "fit", "angle"],
+  "properties": {
+    "id": { "type": "string", "description": "Unique slug identifier" },
+    "title": { "type": "string" },
+    "source": { "type": "string", "enum": ["devpost", "dorahacks", "lablab", "algora", "ethglobal", "code4rena", "sherlock", "immunefi", "other"] },
+    "prize": { "type": "string", "description": "Prize pool as string, e.g. '$50,000'" },
+    "prizeUsd": { "type": "number", "description": "Numeric USD value for sorting" },
+    "deadline": { "type": "string", "format": "date", "description": "Submission deadline YYYY-MM-DD or 'TBA'" },
+    "url": { "type": "string", "format": "uri" },
+    "format": { "type": "string", "enum": ["online", "in-person", "hybrid"] },
+    "status": { "type": "string", "enum": ["confirmed-open", "dates-tba", "expired", "paid-out", "in-person-only"] },
+    "fit": { "type": "integer", "minimum": 1, "maximum": 5, "description": "Team fit score 1-5" },
+    "angle": { "type": "string", "description": "Recommended approach/differentiator" },
+    "taskId": { "type": "string", "description": "Linked task ID in task system" },
+    "notes": { "type": "string" }
+  }
+}

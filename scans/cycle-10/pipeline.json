@@ -1,0 +1,111 @@
+{
+  "cycle": 10,
+  "scannedAt": "2026-03-26T00:00:00Z",
+  "scannedBy": "cso",
+  "sourcesChecked": [
+    "devpost", "dorahacks", "lablab", "algora", "ethglobal", "microsoft-reactor", "code4rena", "github-curated"
+  ],
+  "sourcesNotChecked": [
+    "sherlock", "immunefi", "guardian-defender"
+  ],
+  "window": "2026-04 to 2026-08",
+  "opportunities": [
+    {
+      "id": "lablab-rise-of-ai-agents",
+      "title": "LabLab Rise of AI Agents",
+      "source": "lablab",
+      "prize": "$50,000",
+      "prizeUsd": 50000,
+      "deadline": "TBA",
+      "url": "https://lablab.ai/event/rise-of-ai-agents",
+      "format": "online",
+      "status": "dates-tba",
+      "fit": 5,
+      "angle": "Multi-agent orchestration with tool-use — pre-build Launchpad project",
+      "taskId": null,
+      "notes": "Expected April 2026. Pre-build in progress."
+    },
+    {
+      "id": "liquify-defi-tax",
+      "title": "Liquify DeFi Tax Intelligence Hackathon",
+      "source": "dorahacks",
+      "prize": "$100,000",
+      "prizeUsd": 100000,
+      "deadline": "2026-06-14",
+      "url": "https://dorahacks.io/hackathon/liquify",
+      "format": "online",
+      "status": "confirmed-open",
+      "fit": 4,
+      "angle": "AI-powered DeFi tax classification engine",
+      "taskId": null,
+      "notes": "Build complete. Blocked on human DoraHacks submission."
+    },
+    {
+      "id": "devnetwork-ai-ml",
+      "title": "DevNetwork AI+ML Hackathon",
+      "source": "devpost",
+      "prize": "$12,500",
+      "prizeUsd": 12500,
+      "deadline": "2026-05-28",
+      "url": "https://devnetwork.com",
+      "format": "online",
+      "status": "confirmed-open",
+      "fit": 4,
+      "angle": "AI/ML showcase — reuse agent orchestration or MCP tooling",
+      "taskId": null,
+      "notes": "Opens May 11. Next viable target after LabLab."
+    },
+    {
+      "id": "injective-peggy-bridge",
+      "title": "Injective Peggy Bridge Audit Contest",
+      "source": "code4rena",
+      "prize": "$105,500",
+      "prizeUsd": 105500,
+      "deadline": "2026-03-17",
+      "url": "https://code4rena.com",
+      "format": "online",
+      "status": "expired",
+      "fit": 2,
+      "angle": "Smart contract audit — Solidity/Cosmos bridge",
+      "taskId": null,
+      "notes": "Flagged by adversary review. Deadline already passed. Capability gap: no audit expertise."
+    },
+    {
+      "id": "limit-break-amm",
+      "title": "Limit Break AMM Audit Contest",
+      "source": "other",
+      "prize": "$150,000",
+      "prizeUsd": 150000,
+      "deadline": "TBA",
+      "url": "https://guardiandefender.com",
+      "format": "online",
+      "status": "confirmed-open",
+      "fit": 1,
+      "angle": "Smart contract audit — AMM. 45-day contest on Guardian Defender.",
+      "taskId": null,
+      "notes": "Flagged by adversary review. High prize but team lacks audit capability. Evaluate if Solidity/Rust audit skills are acquirable."
+    },
+    {
+      "id": "raindrops-sherlock",
+      "title": "Raindrops Audit Contest",
+      "source": "other",
+      "prize": "$17,500",
+      "prizeUsd": 17500,
+      "deadline": "TBA",
+      "url": "https://sherlock.xyz",
+      "format": "online",
+      "status": "confirmed-open",
+      "fit": 1,
+      "angle": "Smart contract audit on Sherlock.",
+      "taskId": null,
+      "notes": "Flagged by adversary review. Low prize + capability gap = skip."
+    }
+  ],
+  "contingencyPlan": {
+    "planA": "LabLab $50K (pre-build) + Liquify $100K (submitted)",
+    "planB": "DevNetwork AI+ML $12.5K (opens May 11) + Algora bounty farming ($2.5K-$4K each)",
+    "planC": "Evaluate smart contract audit capability for Guardian Defender/Sherlock contests if Plan A+B yield < $10K",
+    "triggerForPlanB": "LabLab dates slip past May or competition density on Liquify makes EV negative",
+    "triggerForPlanC": "Both Plan A and Plan B fail to convert by June 2026"
+  }
+}
